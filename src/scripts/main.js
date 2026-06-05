@@ -6,11 +6,11 @@ populations.forEach((population) => {
 const changed = population.textContent.replace(/,/g, '');
 const digits = Number(changed);
 total += digits;
-console.log(digits);
+
 });
-console.log(total);
+
 const average = Math.round(total / populations.length);
-console.log(average);
+
 const totalPopulation = document.querySelector('.total-population');
 totalPopulation.textContent = total.toLocaleString();
 const averagePopulation = document.querySelector('.average-population');
